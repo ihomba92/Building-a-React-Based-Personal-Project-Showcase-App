@@ -1,7 +1,7 @@
 
-import CoffeeForm from "./CoffeeForm"
 
-export default function CoffeList({coffees, onAddCoffee, location}) {
+
+export default function CoffeList({coffees, location}) {
   
     function getPriceForLocation(basePrice) {
         const parsePrice = parseFloat(basePrice) || 0;
@@ -44,10 +44,7 @@ export default function CoffeList({coffees, onAddCoffee, location}) {
                         <p className="text-stone-500 text-center col-span-2 py-8">No coffees listed on the menu yet.</p>
                     )}
             </div>
-            </div>
-            <div className="border-t border-stone-800 pt-8">
-                <CoffeeForm onAddCoffee={onAddCoffee} />
-            </div>
+            </div>           
      </div>
 
     )

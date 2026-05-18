@@ -1,6 +1,9 @@
 
+import { useNavigate } from "react-router-dom"
 
-export default function Hero({onExploreMenu}) {
+
+export default function Hero() {
+    const navigate = useNavigate(); // this initializes instantiation of the useNavigate hook from react-router-dom, which allows us to programmatically navigate to different routes in our application
     return (
         <div className="w-full min-h-[70vh] bg-[#1e140f] flex flex-row items-center justify-between px-8 md:px-16 py-12 relative overflow-hidden">
             {/* the glowing background element */}
@@ -19,7 +22,7 @@ export default function Hero({onExploreMenu}) {
                 <div className="pt-2">
                     <button
                     className="bg-amber-500 text-[#1e140f] font-bold px-6 py-3 rounded-lg shadow-lg "
-                    onClick={onExploreMenu}>
+                    onClick={() => navigate("/shop")}> 
                         Explore Menu
                     </button>
                 </div>

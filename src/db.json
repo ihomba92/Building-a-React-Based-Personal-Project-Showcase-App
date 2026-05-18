@@ -20,6 +20,20 @@
       "origin": "congo",
       "price": "120",
       "id": "DB7rkzn2RHU"
+    },
+    {
+      "type": "jahd",
+      "description": "dsajksad",
+      "origin": "lksalklsa",
+      "price": "50",
+      "id": "A_fjVcFkhEY"
+    },
+    {
+      "type": "capocino",
+      "description": "hadkjads",
+      "origin": "Ghana",
+      "price": "200",
+      "id": "I6yiCqxabq8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
