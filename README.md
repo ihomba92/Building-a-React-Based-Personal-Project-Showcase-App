@@ -1,4 +1,4 @@
-Remote Hosting: [https://6a0c1c08b104696564f7a8c2--chimerical-florentine-b75f84.netlify.app/](https://6a0c1c08b104696564f7a8c2--chimerical-florentine-b75f84.netlify.app/)
+Remote Hosting: [https://6a0c475e3725f9008cb50560--soft-cocada-431ea3.netlify.app/](https://6a0c475e3725f9008cb50560--soft-cocada-431ea3.netlify.app/)
 
 
 #  LocalHostSips - Café Management Portal
