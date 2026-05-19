@@ -26,13 +26,11 @@ function App() {
     setCoffees(prevCoffees => [...prevCoffees, newCoffee])
   }
 
-  
- 
   return (
     <Router>
     <div className="flex flex-col min-h-screen bg-[#1e140f]">
       <NavBar />
-        <div className="flex flex-1 flex-row w-full">
+        <div className="flex flex-1 flex-col md:flex-row w-full">
       
       <Routes>
         <Route path="/shop" element={

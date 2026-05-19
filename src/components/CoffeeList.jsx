@@ -24,17 +24,17 @@ export default function CoffeList({coffees, location, }) {
 
 
     return (
-        <div className="p-8 max-w-5xl mx-auto w-full flex flex-col space-y-12">
+        <div className="p-4 md:p-8 max-w-5xl mx-auto w-full flex flex-col space-y-8 md:space-y-12">
 
             <div>
-            <h1 className="text-3xl font-black text-[#f7f4f0] mb-6 text-center border-b border-stone-800 pb-4">
+            <h1 className="text-2xl md:text-3xlfont-black text-[#f7f4f0] mb-4 text-center border-b border-stone-800 pb-4">
                 Coffee <span className="text-amber-500">Menu</span>
             </h1>
             <p className="text-center text-lg text-stone-400 tracking-wide font-medium uppercase">
                 Viewing Menu For: <span className="text-amber-400 font-bold">{location}</span>
             </p>
             <Search onSearchChange={setSearchTerm} searchTerm={searchTerm} />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8">
                 {filteredCoffees.map(coffee => (
                     <div key={coffee.id} className="bg-[#1e140f] border border-stone-800 rounded-lg p-6 flex flex-col space-y-4">
                         <div className="space-y-1 max-w-[70%]" >

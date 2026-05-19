@@ -12,13 +12,12 @@ export default function SideBar({selectedLocation, setSelectedLocation}) {
     
     
     return (
-        <aside className="h-screen w-64 bg-[#1e140f] border-r border-stone-800 pt-6 pb-6 px-4 flex flex-col justify-start space-y-6 hidden md:flex">
+        <aside className="h-auto w-full md:h-screen md:w-64 bg-[#1e140f] border-b md:border-b-0 md:border-r border-stone-800 pt-4 pb-4 md:pt-6 md:pb-6 px-4 flex flex-col justify-start space-y-3 md:space-y-6">
          <p className=" text-xs font-bold uppercase tracking-wider text-amber-500/80 mb-4">
                     Café Locations
                 </p>
         
-         <nav className="space-y-1 flex flex-col gap-5 ">
-            {locations.map(location => {
+               <nav className="flex flex-row overflow-x-auto md:flex-col gap-2 md:gap-3 pb-2 md:pb-0 scrollbar-none no-scrollbar">            {locations.map(location => {
                 const isActive = selectedLocation === location.id;
                 return (
                     <button

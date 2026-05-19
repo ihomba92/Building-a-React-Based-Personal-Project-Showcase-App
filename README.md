@@ -1,4 +1,4 @@
-Remote Hosting: [https://6a0c02b56021b4206e352637--tranquil-sunburst-66ab46.netlify.app/](https://6a0c02b56021b4206e352637--tranquil-sunburst-66ab46.netlify.app/)
+Remote Hosting: [https://6a0c12180b6f363ee7b2f4a3--jolly-marshmallow-492f33.netlify.app/](https://6a0c12180b6f363ee7b2f4a3--jolly-marshmallow-492f33.netlify.app/)
 
 
 #  LocalHostSips - Café Management Portal
