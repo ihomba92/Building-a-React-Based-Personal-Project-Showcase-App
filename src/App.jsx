@@ -1,4 +1,4 @@
-import { useState, useEffect  } from 'react'
+import { useState, useEffect, use  } from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import NavBar from './layout/NavBar'
 import Hero from './components/Hero'
@@ -6,20 +6,27 @@ import SideBar from './layout/SideBar'
 import CoffeeList from './components/CoffeeList'
 import CoffeeForm from './components/CoffeeForm'
 import Footer from './layout/Footer'
-
+import { DEFAULT_COFFEES } from './components/Staticmenu'
 function App() {
   // const[showCoffeeList, setShowCoffeeList] = useState(false);
-  const [coffees, setCoffees] = useState([]);
+  
   const[selectLocation, setSelectLocation] = useState("City Center")
  
+  const [coffees, setCoffees] = useState(() => {
+    const savedCoffees = localStorage.getItem("coffees")
+    return savedCoffees ? JSON.parse(savedCoffees) : DEFAULT_COFFEES
+  });
   
   //function to fetch coffees from json server
+  // useEffect(() => {
+  //   fetch("http://localhost:9292/coffees")
+  //   .then(response => response.json())
+  //   .then(data => setCoffees(data))
+  //   .catch(error => console.error("Error fetching coffees:", error))
+  // }, []);  
   useEffect(() => {
-    fetch("http://localhost:9292/coffees")
-    .then(response => response.json())
-    .then(data => setCoffees(data))
-    .catch(error => console.error("Error fetching coffees:", error))
-  }, []);  
+    localStorage.setItem("coffees", JSON.stringify(coffees))
+  }, [coffees]);
 
   // function to handle add new coffee form submission
   function handleAddCoffee(newCoffee) {

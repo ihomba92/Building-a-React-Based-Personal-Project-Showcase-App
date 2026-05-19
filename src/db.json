@@ -34,6 +34,13 @@
       "origin": "Ghana",
       "price": "200",
       "id": "I6yiCqxabq8"
+    },
+    {
+      "type": "aHSJSA",
+      "description": "jlksajdlksad",
+      "origin": "Ghana",
+      "price": "234",
+      "id": "4Ec69lU-EPM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
