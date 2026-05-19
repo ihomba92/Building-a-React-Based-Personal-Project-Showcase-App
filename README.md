@@ -1,3 +1,5 @@
+Remote Hosting: [https://6a0c02b56021b4206e352637--tranquil-sunburst-66ab46.netlify.app/](https://6a0c02b56021b4206e352637--tranquil-sunburst-66ab46.netlify.app/)
+
 
 #  LocalHostSips - Café Management Portal
 
@@ -55,3 +57,5 @@ The application features a bespoke **Dark Espresso & Amber** UI profile optimize
 ├── db.json               # Local structured API mock database schema
 ├── package.json          # Dependency manifest configuration
 └── README.md             # Project documentation
+
+

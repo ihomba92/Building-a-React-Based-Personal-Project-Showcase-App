@@ -14,7 +14,7 @@ export default function Hero() {
                     Welcome to
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f7f4f0] leading-tight break-words">                    
-                    The Local <span className="text-amber-500">Host</span> Sips
+                    Local <span className="text-amber-500">Host</span> Sips
                 </h1>
                 <p className="text-stone-300 text-base md:text-lg lg:text-xl font-light leading-relaxed max-w-xl">             
                     Your one-stop shop for all things coffee
